@@ -13,7 +13,8 @@ find_package(Boost REQUIRED COMPONENTS system)
 
 add_action_files(
   DIRECTORY action
-  FILES Example.action
+  FILES
+  Example.action
 )
 
 generate_messages(
@@ -32,15 +33,22 @@ include_directories(include
 )
 
 add_executable(example_action_server src/example_action_server.cpp)
-add_dependencies(example_action_server example_action_gencpp)
+add_dependencies(example_action_server action_tut_gencpp)
 target_link_libraries(
   example_action_server
   ${catkin_LIBRARIES}
 )
 
 add_executable(example_action_client src/example_action_client.cpp)
-add_dependencies(example_action_client example_action_gencpp)
+add_dependencies(example_action_client action_tut_gencpp)
 target_link_libraries(
   example_action_client
+  ${catkin_LIBRARIES}
+)
+
+add_executable(example_action_client_with_feedback src/example_action_client_with_feedback.cpp)
+add_dependencies(example_action_client_with_feedback action_tut_gencpp)
+target_link_libraries(
+  example_action_client_with_feedback
   ${catkin_LIBRARIES}
 )

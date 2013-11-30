@@ -1,0 +1,26 @@
+# Remove the base Catkin workspace CMakeLists.txt. file
+/CMakeLists.txt
+
+# ROS Components
+CMakeFiles
+CMakeCache.txt
+cmake_install.cmake
+build/
+bin/
+lib/
+msg_gen/
+srv_gen/
+*.pyc
+
+# Eclipse projects
+.project
+.cproject
+.settings
+.pydevproject
+Makefile.*
+Debug
+Release
+
+# General
+*~
+*.bak
