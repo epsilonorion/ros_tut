@@ -22,3 +22,10 @@ catkin_package(
 include_directories(#include
   ${catkin_INCLUDE_DIRS}
 )
+
+install(PROGRAMS
+  src/example_action_smach.py
+  src/example_smach.py
+  src/example_example_states.py
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
