@@ -20,7 +20,7 @@ include_directories(include
 )
 
 catkin_package(
-   INCLUDE_DIRS include
+#   INCLUDE_DIRS include
 #  LIBRARIES opencv_tut
 #  CATKIN_DEPENDS cv_bridge image_transport opencv2 roscpp sensor_msgs std_msgs message_runtime
 #  DEPENDS system_lib
