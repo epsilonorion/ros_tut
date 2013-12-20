@@ -16,6 +16,7 @@
   <run_depend>opencv_tut</run_depend>
   <run_depend>smach_tut</run_depend>
   <run_depend>action_tut</run_depend>
+  <run_depend>tf_tut</run_depend>
 
   <export>
     <metapackage/>
